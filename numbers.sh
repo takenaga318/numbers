@@ -2,16 +2,14 @@
 # numbers.sh
 # Audrey Takenaga
 echo "Enter a positive integer:"
-read -r X
+read -r NUMBER
 N=1
-
-while echo "$X" | grep -E -v "^[1-9][0-9]*$" > /dev/null 2>&1
+while echo "$NUMBER" | grep -E -v "^[1-9][0-9]*$" > /dev/null 2>&1
 do
 	echo "You must enter a positive integer!"
-	read -r X
+	read -r NUMBER
 done
-
-while [ $N -le $X ]
+while [ $N -le $NUMBER ]
 do
 	if [ $((N%2)) -eq 0 ]
 	then
