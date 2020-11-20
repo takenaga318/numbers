@@ -11,7 +11,7 @@ do
 	read -r X
 done
 
-while [ $N -ne $((X + 1)) ]
+while [ $N -le $X ]
 do
 	if [ $((N%2)) -eq 0 ]
 	then
