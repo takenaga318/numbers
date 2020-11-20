@@ -1,17 +1,12 @@
 #! /bin/bash
 # numbers.sh
 # Audrey Takenaga
-echo "Enter a positive integer:"
+echo "Enter a positive interger"
 read -r NUMBER
 N=1
-while echo "$NUMBER" | grep -E -v "^[1-9][0-9]*$" > /dev/null 2>&1
-do
-	echo "You must enter a positive integer!"
-	read -r NUMBER
-done
-while [ $N -le $NUMBER ]
-do
-	if [ $((N%2)) -eq 0 ]
+while [ "$N" -le "$NUMBER" ]
+do 
+	if [ "$((N%2))" -eq 0 ]
 	then
 		echo "$N even"
 	else
