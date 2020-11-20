@@ -1,5 +1,5 @@
 ## Identifying Information: 
-1. Name: Audrey Takenaga 
+1. Name: Audrey Takenaga  
 2. Student ID: 2345469
 3. Email: takenaga@chapman.edu
 4. Class: CPSC 298-03
